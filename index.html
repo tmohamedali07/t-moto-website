@@ -22,22 +22,26 @@
   <header>
     <h1>T-Moto Car Detailing</h1>
     <p>Premium car cleaning services, done right.</p>
+    <img src="https://t3.ftcdn.net/jpg/03/65/83/76/360_F_365837676_Yyr9VO6VrAzwyqFbipRdqoAaFdWRSzWq.jpg" alt="Car Detailing" style="width:100%; max-height:300px; object-fit:cover;">
   </header>
 
-  <div class="container">
+<div class="container">
     <section class="packages">
       <h2>Our Packages</h2>
       <div class="package">
         <h3>Basic Wash</h3>
+        <img src="https://files.oaiusercontent.com/file-7jch7adn3rRzOtSHn4zPpBD8?separate=true" alt="Basic Wash">
         <p>Exterior hand wash, tire shine, and quick interior vacuum. - $25</p>
       </div>
       <div class="package">
         <h3>Deluxe Detail</h3>
+        <img src="https://files.oaiusercontent.com/file-WbMSM5nT9UMYyOxhA5aGrRCz?separate=true" alt="Deluxe Detail">
         <p>Basic Wash + interior wipe down, windows, and wax finish. - $50</p>
       </div>
       <div class="package">
         <h3>Premium Shine</h3>
-        <p>Deluxe Detail + engine cleaning and ceramic coating. - $100</p>
+        <img src="https://files.oaiusercontent.com/file-WkCB6kXPHICzVCoBYHn6Dk6y?separate=true" alt="Premium Shine">
+        <p>Deluxe Detail + engine bay cleaning, clay bar treatment, and ceramic coating. - $100</p>
       </div>
     </section>
 
@@ -56,8 +60,15 @@
   <label for="date">Preferred Date:</label>
   <input type="date" id="date" name="date" required />
 
-  <label for="time">Preferred Time:</label>
-  <input type="time" id="time" name="time" required />
+ <label for="time">Available Times:</label>
+        <select id="time" name="time" required>
+          <option value="">--Select a time--</option>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+        </select>
+
 
   <label for="package">Choose a Package:</label>
   <select id="package" name="package" required>
